@@ -111,4 +111,16 @@ $(function () {
 	    }, 1);
     });
 
+    function resize()
+    {
+        var heights = window.innerHeight;
+        var widths = window.innerWidth;
+        document.getElementById("main-content").style.height = heights-52 + "px";
+        document.getElementById("main-content").style.width = widths + "px";
+    }
+    resize();
+    window.onresize = function() {
+        resize();
+    };  
+
 });
