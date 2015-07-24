@@ -1,0 +1,37 @@
+{% include 'header.html' %}
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<center><h2><u>About Me</u></h2></center>
+			<br/><br/>
+		</div>
+		<p><h4>Hey there, my name is Kris Vukasinovic and I'm a software engineer! I have a passion for code, science, the universe and society. Most of my time is spent thinking about real world problems and how I could go about solving them through software. In particular, I have a great love for merging the digital world of the internet and code with that of the real world.</h4></p>
+		<br/>
+		<p><h4>If I'm not learning about some new aspect in software, you can probably find me at Indigo or on the web watching lectures and learning about various topics. The problems that face our world today as well as those that will emerge tomorrow captivate me and push me into new frontiers. Overall, exposure to these problems such as climate change or human conflict is the first step in proposing a solution. My passion has become engineering solutions to these problems whenever I see an opportunity.</h4></p>
+		<br/>
+		<div class="col-md-12">
+			<center><h2><u>Contact Form</u></h2></center>
+			<br/>
+			<br/>
+				<form role="form" style="width: 500px; margin-left: auto; margin-right: auto;">
+				<label for="email">Would you like to talk? Feel free to send me a message below!<br/><br/></label>
+				  <div class="form-group">
+				    <label for="email">Your email address:</label>
+				    <input type="email" class="form-control" id="email" placeholder="example@example.com">
+				  </div>
+				  <div class="form-group">
+				    <label for="pwd">Subject:</label>
+				    <input type="subject" class="form-control" id="subject" placeholder="Hi there!">
+				  </div>
+				  <label for="body">Body:</label>
+  					<textarea class="form-control" rows="5" id="body" placeholder="The bulk of your message."></textarea>
+  					<br/>
+				  <button type="submit" class="btn btn-success">Submit</button>
+				</form>
+		</div>
+	</div>
+	<br/>
+	<br/>
+</div>
+{% include 'footer.html' %}

@@ -13,6 +13,10 @@ class PastProjects(MainHandler):
     def get(self):
         self.render('past-projects.html')
 
+class Technology(MainHandler):
+    def get(self):
+        self.render('technology.html')
+
 class Coding(MainHandler):
     def get(self):
         self.render('coding.html')
@@ -37,6 +41,14 @@ class AboutMe(MainHandler):
     def get(self):
         self.render('about-me.html')
 
+class AboutContact(MainHandler):
+    def get(self):
+        self.render('about-contact.html')
+
+class Four_Month_Anniversary(MainHandler):
+    def get(self):
+        self.render('heart.html')
+
 app = webapp2.WSGIApplication([
 	('/', HomePage),
 	('/current-projects', CurrentProjects),
@@ -46,5 +58,8 @@ app = webapp2.WSGIApplication([
 	('/environment', Environment),
 	('/future', Future),
 	('/contact', Contact),
-	('/about-me', AboutMe)
+	('/about-me', AboutMe),
+    ('/four_month_anniversary', Four_Month_Anniversary),
+    ('/technology', Technology),
+    ('/about-contact', AboutContact)
 ], debug=True)
