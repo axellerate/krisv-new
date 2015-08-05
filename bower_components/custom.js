@@ -9,6 +9,7 @@ var aurora2 = $('.aurora2');
 var aurora3 = $('.aurora3');
 var aurora4 = $('.aurora4');
     function runIt() {
+    	$('.message2').delay(5000).fadeIn(5000);
     	aurora1.fadeIn(1000);
     	aurora2.fadeIn(1000);
     	aurora3.fadeIn(1000);
@@ -71,7 +72,9 @@ var aurora4 = $('.aurora4');
 	    reverse: false,
 
 	    // callback that executes once the animation has finished
-	    callback: function () { $('.message1').textillate('out');}
+	    callback: function () { 
+	    	$('.message1').textillate('out');
+	    }
 	  },
 
 	  // out animation settings.
@@ -82,7 +85,10 @@ var aurora4 = $('.aurora4');
 	    sync: false,
 	    shuffle: true,
 	    reverse: false,
-	    callback: function () {runIt();}
+	    callback: function () {
+	    	runIt();
+
+	    }
 	  },
 
 	  // callback that executes once textillate has finished 
@@ -91,7 +97,6 @@ var aurora4 = $('.aurora4');
 	  // set the type of token to animate (available types: 'char' and 'word')
 	  type: 'char'
 	});
-
 
 
 $(function () {
