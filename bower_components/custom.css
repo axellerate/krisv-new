@@ -50,9 +50,9 @@ background-color: #000;
 	background-image:url('/assets/krisv-logo-hover.png');
 }
 
-a{
-	font-family: 'Vollkorn', serif;
-	font-size: 16px;
+nav a{
+	font-family: 'Poiret One', cursive;
+	font-size: 18px;
 }
 
 .message1{
