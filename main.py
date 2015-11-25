@@ -45,6 +45,17 @@ class AboutContact(MainHandler):
     def get(self):
         self.render('about-contact.html')
 
+    def post(self):
+        m = Messages()
+        email = self.request.get("email")
+        subject = self.request.get("subject")
+        body = self.request.get("body")
+        m.email = email
+        m.subject = subject
+        m.body = body
+        m.put()
+        self.redirect("/")
+        
 class Four_Month_Anniversary(MainHandler):
     def get(self):
         self.render('heart.html')
